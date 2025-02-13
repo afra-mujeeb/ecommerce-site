@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Delight - E-Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1>🍪 Cookie Delight</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+            <div class="cart">
+                🛒 Cart <span id="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Product Section -->
+    <section class="products">
+        <div class="product">
+            <img src="choco-chip.jpg" alt="choco chip Cookie">
+            <h2>Choco Chip Cookie</h2>
+            <p>₹150.00</p>
+            <button onclick="addToCart('Choco Chip Cookie', 150)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="oatmeal.jpg" alt="oatmeal Cookie">
+
+            <h2>Oatmeal Cookie</h2>
+            <p>₹120.00</p>
+            <button onclick="addToCart('oatmeal Cookie', 120)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="C:\Users\pc\Desktop\ec\peanut-butter.jpeg" alt="peanut butter Cookie">
+
+            <h2>Peanut Butter Cookie</h2>
+            <p>₹180.00</p>
+            <button onclick="addToCart('Peanut Butter Cookie', 180)">Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Section -->
+    <div class="cart-section">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p><strong>Total: ₹<span id="cart-total">0</span></strong></p>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
